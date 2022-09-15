@@ -345,7 +345,7 @@
             </div>
 
 
-            <div class="sociallink">
+            <div class="sociallink foot-block">
                 <p class="title">приєднуйтесь</p>
                 <ul class="social-list list">
                     <li class="social-item-main"><a class="link" href="https://www.instagram.com" target="_blank"
@@ -368,6 +368,23 @@
                 </ul>
             </div>
 
+            <div>
+                <form action="">
+                    <p class="send-title">Підпишіться на розсилку</p>
+                    <div class="send">
+                        <label>
+                            <input class="send-input" type="email" name="send" placeholder="E-mail">
+                        </label>
+                        <button class="btn primary send-btn" type="submit">
+                            Підписатися
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./imeges/icons.svg#send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </footer>
 
@@ -375,10 +392,66 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal"><button class="modal-btn" type="button" data-modal-close>
-                <svg width="11" height="11">
-                    <use href="./imeges/icons.svg#cross"></use>
+                <svg class="close-btn" width="11" height="11">
+                    <use href="./imeges/icons.svg#close"></use>
                 </svg>
-            </button></div>
+            </button>
+
+            <form class="register-form" name="register-form">
+                <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+                <div class="register-form-group" role="group">
+                    <label class="register-form-field">
+                        <span class="register-form-lable">Ім'я</span>
+                        <div class="reletive">
+                            <input class="register-form-input" name="user-name" type="text" required>
+                            <svg class="register-form-icon" height="18" width="18">
+                                <use href="./imeges/icons.svg#person-black"></use>
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="register-form-field">
+                        <span class="register-form-lable">Телефон</span>
+                        <div class="reletive">
+                            <input class="register-form-input" name="user-tel" type="tel" required>
+                            <svg class="register-form-icon" height="18" width="18">
+                                <use href="./imeges/icons.svg#phone-black"></use>
+                            </svg>
+                        </div>
+
+                    </label>
+                    <label class="register-form-field">
+                        <span class="register-form-lable">Пошта</span>
+                        <div class="reletive">
+                            <input class="register-form-input" name="user-email" type="email" required>
+                            <svg class="register-form-icon" height="18" width="18">
+                                <use href="./imeges/icons.svg#email-black"></use>
+                            </svg>
+                        </div>
+
+                    </label>
+                    <label class="register-form-field">
+                        <span class="register-form-heading">Коментар</span>
+                        <textarea class="register-form-message" name="massage" rows="5"
+                            placeholder="Введіть текст"></textarea>
+                    </label>
+                </div>
+
+                <label class="register-form-agreement">
+                    <input class="register-form-checkbox visually-hidden" type="checkbox" name="agreement" required>
+                    <svg class="register-form-icons" width="16" height="15">
+                        <use class="icon-uncheck" href="./imeges/icons.svg#uncheck"></use>
+                        <use class="icon-check" href="./imeges/icons.svg#check"></use>
+                    </svg>
+                    <span class="register-form-desc">Погоджуюся з розсилкою та приймаю
+                        <a class="register-form-link" href="">Умови договору</a></span>
+                </label>
+                <button class="register-form-btn btn primary" type="submit">Відправити</button>
+            </form>
+
+
+        </div>
+
+
     </div>
 
     <script src="./js/modal.js"></script>
