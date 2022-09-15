@@ -380,9 +380,9 @@ display: block;
 
 .register-form-icon {
 position: absolute;
-   top: 50%;
+display: block;
+   bottom: 12px;
    left: 12px;
-   transform: translateY(-50%);
    transition: fill var(--duration) var(--timing-function);
 }
 
@@ -406,11 +406,6 @@ opacity: 1;
     opacity: 0;
 }
 
-
-.reletive {
-    position: relative;
-}
- 
 .register-form-btn {
     display: block;
     margin: 0 auto;
